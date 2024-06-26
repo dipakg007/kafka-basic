@@ -1,0 +1,9 @@
+server:
+  port: 8081
+  kafka:
+    producer:
+      bootstrap-servers: localhost:9092
+      group-id: group-1
+      auto-offset-reset: earliest
+      key-serializer: org.apache.kafka.common.serializer.StringSerializer
+      value-serializer: org.apache.kafka.common.serializer.StringSerializer
